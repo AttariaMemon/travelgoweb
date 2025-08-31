@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Website</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">TravelGo</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Destinations</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="menu-toggle">&#9776;</div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Travel the World</h1>
+    <div class="map">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/1200px-World_map_-_low_resolution.svg.png" alt="World Map">
+    </div>
+  </section>
+
+  <!-- Cards Section -->
+  <section class="cards">
+    <div class="card">
+      <img src="images.jpeg" alt="Beach">
+      <div class="content">
+        <h3>Sunny Beaches</h3>
+        <p>Relax on the golden sands and enjoy the waves.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="download.jpeg" alt="Mountains">
+      <div class="content">
+        <h3>Mountain Escape</h3>
+        <p>Adventure awaits with breathtaking views.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="2e0c9793-9c10-494d-861d-e8ca9b89d22e_e89e7a52.jpg" alt="City">
+      <div class="content">
+        <h3>City Lights</h3>
+        <p>Experience the culture and nightlife of modern cities.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images (1).jpeg" alt="Forest">
+      <div class="content">
+        <h3>Wild Forests</h3>
+        <p>Reconnect with nature in lush green landscapes.</p>
+      </div>
+    </div>
+  </section>
+<div class="book-sec">
+<h1>BOOK NOW</h1>
+ <div class="book-trip">
+    <img class="myImg" src="plane.png"  alt="">
+ <div class="overlay">
+    <div class="booking-container">
+      <h2>Book Your Trip</h2>
+      <form id="bookingForm">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="destination">Destination</label>
+          <select id="destination" required>
+            <option value="">Select destination</option>
+            <option>Paris</option>
+            <option>Dubai</option>
+            <option>New York</option>
+            <option>Tokyo</option>
+            <option>London</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Travel Date</label>
+          <input type="date" id="date" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Special Requests</label>
+          <textarea id="message" placeholder="Any requests?"></textarea>
+        </div>
+        <button type="submit" class="btn">Book Now</button>
+      </form>
+      <p class="success-message" id="successMessage">🎉 Your trip is booked successfully!</p>
+    </div>
+  </div>
+</div>
+</div>
+
+  <!-- ===== FOOTER START ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <!-- Brand -->
+      <div class="footer-brand">
+        <h2>TravelGo</h2>
+        <p>Explore the world with us. Find amazing destinations, plan your trips, and make unforgettable memories.</p>
+      </div>
+      
+      <!-- Links -->
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Booking</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>Email: info@travelgo.com</p>
+        <p>Phone: +123 456 789</p>
+        <p>Address: New York, USA</p>
+
+        <!-- Social Icons -->
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> TravelGo. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- ===== FOOTER END ===== -->
+<script src="script.js"></script>
+</body>
+</html>
